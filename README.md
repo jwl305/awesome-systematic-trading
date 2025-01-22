@@ -12,7 +12,7 @@ We are collecting a list of resources papers, softwares, books, articles for fin
 ### What will you find here?
 
 - [97 libraries and packages](#libraries-and-packages) for research and live trading
-- [696 strategies](#strategies) described by institutionals and academics
+- [40+ strategies](#strategies) described by institutionals and academics
 - [55 books](#books) for beginners and professionals
 - [23 videos](#videos) and interviews
 - And also some [blogs](#blogs) and [courses](#courses)
@@ -303,7 +303,7 @@ We are collecting a list of resources papers, softwares, books, articles for fin
 
 # Strategies
 
-*List of **696 academic papers** describing original systematic trading strategies. Each strategy is categorized by its asset class and ordered by descending Sharpe ratio.*
+*List of **40+ academic papers** describing original systematic trading strategies. Each strategy is categorized by its asset class and ordered by descending Sharpe ratio.*
 
 👉 Strategies are now hosted [here](https://paperswithbacktest.com).
 
