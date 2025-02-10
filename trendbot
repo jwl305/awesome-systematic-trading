@@ -1,0 +1,93 @@
+import ccxt
+import pandas as pd
+import time
+import requests
+from ta.trend import ADXIndicator
+from ta.volatility import AverageTrueRange
+import numpy as np
+from datetime import datetime
+import pytz
+
+# Binance API setup
+binance = ccxt.binance()
+
+# Telegram Bot Setup
+TELEGRAM_BOT_TOKEN = "7687461615:AAG72QIl687Nsd_uqn2JOvIrhD9n-_1NbGg"  # Replace with your bot token
+TELEGRAM_CHAT_ID = "1141407233"  # Replace with your chat ID
+
+def send_telegram_alert(message):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "HTML"}
+    try:
+        response = requests.post(url, json=payload)
+        if response.status_code == 200:
+            print("Telegram alert sent successfully.")
+        else:
+            print(f"Failed to send Telegram alert: {response.text}")
+    except Exception as e:
+        print(f"Telegram Exception: {e}")
+
+# Parameters
+SYMBOL = 'ADA/USDT'  # Change this for different pairs
+TIMEFRAME = '15m'     # Change this for different timeframes
+ADX_THRESHOLD = 25    # ADX threshold for trend detection
+ATR_MULTIPLIER = 1.5  # ATR filter to confirm trend
+SMA_PERIOD = 50       # Moving Average Period
+LOOKBACK_PERIOD = 14  # ATR and ADX lookback period
+
+def convert_to_kst(timestamp):
+    utc_time = timestamp.tz_localize('UTC')
+    kst_time = utc_time.astimezone(pytz.timezone('Asia/Seoul'))
+    return kst_time
+
+# Fetch historical data
+def fetch_data(symbol, timeframe, limit=100):
+    candles = binance.fetch_ohlcv(symbol, timeframe, limit=limit)
+    df = pd.DataFrame(candles, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+    df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
+    df.set_index('timestamp', inplace=True)
+    df.index = df.index.map(convert_to_kst)  # Convert timestamps to KST
+    return df
+
+# Calculate trend indicators
+def compute_indicators(df):
+    df['SMA'] = df['close'].rolling(window=SMA_PERIOD).mean()
+    adx = ADXIndicator(df['high'], df['low'], df['close'], window=LOOKBACK_PERIOD)
+    df['ADX'] = adx.adx()
+    df['+DI'] = adx.adx_pos()
+    df['-DI'] = adx.adx_neg()
+    atr = AverageTrueRange(df['high'], df['low'], df['close'], window=LOOKBACK_PERIOD)
+    df['ATR'] = atr.average_true_range()
+    return df
+
+# Trend detection function
+def detect_trend(df):
+    latest = df.iloc[-1]
+    previous = df.iloc[-2]
+    
+    if latest['ADX'] > ADX_THRESHOLD:
+        if latest['close'] > latest['SMA'] and latest['+DI'] > latest['-DI']:
+            trend = "📈 <b>Uptrend</b>"
+        elif latest['close'] < latest['SMA'] and latest['-DI'] > latest['+DI']:
+            trend = "📉 <b>Downtrend</b>"
+        else:
+            trend = "⚠️ <b>Weak Trend</b>"
+    else:
+        trend = "🔵 <b>Range</b>"
+    
+    alert_message = f"[{df.index[-1]}] {SYMBOL} Market Condition: {trend}"
+    print(alert_message)
+    send_telegram_alert(alert_message)
+    return trend
+
+# Main loop for real-time detection
+def run_trend_detection():
+    while True:
+        df = fetch_data(SYMBOL, TIMEFRAME)
+        df = compute_indicators(df)
+        trend = detect_trend(df)
+        time.sleep(60*15)  # Run every 60 seconds * 15min
+
+# Run the script
+if __name__ == "__main__":
+    run_trend_detection()
