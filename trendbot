@@ -6,7 +6,7 @@ from ta.trend import ADXIndicator
 from ta.volatility import AverageTrueRange
 from datetime import datetime
 import pytz
-
+# testing changes
 # Binance API setup
 binance = ccxt.binance()
 
