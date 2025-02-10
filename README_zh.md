@@ -10,7 +10,7 @@
 ### 你在这里会发现什么？
 
 - [97个](#库和包)用于研究和实际交易的[库和包](#库和包)
-- 机构和学术界描述的[696项战略](#战略)
+- 机构和学术界描述的[40+项战略](#战略)
 - [55本](#书籍)适合初学者和专业人士的[书籍](#书籍)
 - [23个视频](#视频)和采访
 - 还有一些[博客](#博客)和[课程](#课程)
@@ -66,7 +66,7 @@
 > ### 我怎样才能提供帮助？
 > 你可以通过提交带有建议的问题和在Twitter上分享来帮助。
 >
-> [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=A%20free%20and%20comprehensive%20list%20of%20papers%2C%20libraries%2C%20books%2C%20blogs%2C%20tutorials%20for%20quantitative%20traders.&url=https://github.com/edarchimbaud/awesome-systematic-trading)
+> [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=A%20free%20and%20comprehensive%20list%20of%20papers%2C%20libraries%2C%20books%2C%20blogs%2C%20tutorials%20for%20quantitative%20traders.&url=https://github.com/paperswithbacktest/awesome-systematic-trading)
 
 
 # 库和包
@@ -93,6 +93,7 @@
 | [WonderTrader](https://github.com/wondertrader/wondertrader) | WonderTrader——量化研发交易一站式框架  | ![GitHub stars](https://badgen.net/github/stars/wondertrader/wondertrader) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [nautilus_trader](https://github.com/nautechsystems/nautilus_trader) | 一个高性能的算法交易平台和事件驱动的回测器 | ![GitHub stars](https://badgen.net/github/stars/nautechsystems/nautilus_trader) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [PandoraTrader](https://github.com/pegasusTrader/PandoraTrader) | 基于c++开发，支持多种交易API，跨平台的高频量化交易平台 | ![GitHub stars](https://badgen.net/github/stars/pegasusTrader/PandoraTrader) | ![made-with-c++](https://img.shields.io/badge/Made%20with-c++-1f425f.svg) |
+[HFTBacktest](https://github.com/nkaz001/hftbacktest) | Python+Numba 对高频交易数据进行高精度回测 | ![GitHub stars](https://badgen.net/github/stars/nkaz001/hftbacktest) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [aat](https://github.com/AsyncAlgoTrading/aat) | 一个异步的、事件驱动的框架，用于用python编写算法交易策略，并可选择用C++进行加速。它的设计是模块化和可扩展的，支持各种工具和策略，在多个交易所之间进行实时交易。 | ![GitHub stars](https://badgen.net/github/stars/AsyncAlgoTrading/aat) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [sdoosa-algo-trade-python](https://github.com/sreenivasdoosa/sdoosa-algo-trade-python) | 这个项目主要是为那些有兴趣学习使用python解释器编写自己的交易算法的algo交易新手准备的。 | ![GitHub stars](https://badgen.net/github/stars/sreenivasdoosa/sdoosa-algo-trade-python) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [lumibot](https://github.com/Lumiwealth/lumibot) | 一个非常简单而有用的回溯测试和基于样本的实时交易框架（运行速度有点慢......）。 | ![GitHub stars](https://badgen.net/github/stars/Lumiwealth/lumibot) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
@@ -147,6 +148,7 @@
 | 存储库 | 描述 | 明星 | 使用方法 |
 |------------|-------------|-------|-----------|
 | [ta-lib](https://github.com/mrjbq7/ta-lib) | 对金融市场数据进行技术分析 | ![GitHub stars](https://badgen.net/github/stars/mrjbq7/ta-lib) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
+| [go-tart](https://github.com/iamjinlei/go-tart) | 用Go实现的[ta-lib]((https://github.com/mrjbq7/ta-lib)，支持增量更新 | ![GitHub stars](https://badgen.net/github/stars/iamjinlei/go-tart) | ![made-with-go](https://img.shields.io/badge/Made%20with-go-1f425f.svg) |
 | [pandas-ta](https://github.com/twopirllc/pandas-ta) | 潘达斯技术分析（Pandas TA）是一个易于使用的库，它利用潘达斯软件包的130多个指标和实用功能以及60多个TA Lib蜡烛图。 | ![GitHub stars](https://badgen.net/github/stars/twopirllc/pandas-ta) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [finta](https://github.com/peerchemist/finta) | 在Pandas中实施的共同财务技术指标 | ![GitHub stars](https://badgen.net/github/stars/peerchemist/finta) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [ta-rust](https://github.com/greyblake/ta-rs) | Rust语言的技术分析库 | ![GitHub stars](https://badgen.net/github/stars/greyblake/ta-rs) | ![made-with-rust](https://img.shields.io/badge/Made%20with-Rust-1f425f.svg) |
@@ -221,7 +223,8 @@
 | [Cryptofeed](https://github.com/bmoscon/cryptofeed) | 使用Asyncio的加密货币交易所Websocket数据源处理程序 | ![GitHub stars](https://badgen.net/github/stars/bmoscon/cryptofeed) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [Gekko-Datasets](https://github.com/xFFFFF/Gekko-Datasets) | Gekko交易机器人数据集转储。下载和使用SQLite格式的历史文件。 | ![GitHub stars](https://badgen.net/github/stars/xFFFFF/Gekko-Datasets) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [CryptoInscriber](https://github.com/Optixal/CryptoInscriber) | 一个实时的加密货币历史交易数据图谱。从任何加密货币交易所下载实时历史交易数据。 | ![GitHub stars](https://badgen.net/github/stars/Optixal/CryptoInscriber) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
-
+[Crypto Lake](https://github.com/crypto-lake/lake-api) | 加密货币的高频订单簿和交易数据
+ | ![GitHub stars](https://badgen.net/github/stars/crypto-lake/lake-api) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 
 ## 数据科学
 
@@ -290,24 +293,10 @@
 
 # 战略
 
-*696篇描述原始系统交易策略的学术论文列表。每种策略按其资产类别分类，并按夏普比率降序排列。*
+*40+篇描述原始系统交易策略的学术论文列表。每种策略按其资产类别分类，并按夏普比率降序排列。*
 
-👉策略现在托管在 [这里](https://edarchimbaud.com)：
+👉策略现在托管在 [这里](https://paperswithbacktest.com).
 
-- 债券策略 (7)](https://edarchimbaud.com/bonds)
-- 商品策略 (50)](https://edarchimbaud.com/commodities)
-- 加密货币策略 (12)](https://edarchimbaud.com/cryptocurrencies)
-- [货币策略 (67)](https://edarchimbaud.com/currencies)
-- 股票策略 (471)](https://edarchimbaud.com/equities)
-- 期权策略 (8)](https://edarchimbaud.com/options)
-- 债券/商品/货币/股票策略 (22)](https://edarchimbaud.com/bonds-commodities-currencies-equities)
-- [债券/商品/股票策略 (6)](https://edarchimbaud.com/bonds-commodities-equities)
-- [债券/商品/股票/房地产投资信托策略 (6)](https://edarchimbaud.com/bonds-commodities-equities-reits)
-- [债券/股票策略 (13)](https://edarchimbaud.com/bonds-equities)
-- 债券/股票/房地产投资信托策略 (6)](https://edarchimbaud.com/bonds-equities-reits)
-- 商品/股票策略 (3)](https://edarchimbaud.com/commodities-equities)
-- 股票/期权策略 (24)](https://edarchimbaud.com/equities-options)
-- 股票/房地产投资信托策略 (1)](https://edarchimbaud.com/equities-reits)
 
 上一个策略列表：
 
@@ -551,7 +540,7 @@
 | 标题                                                              |
 |--------------------------------------------------------------------|
 | [AAA Quants, Tom Starke Blog](http://aaaquants.com/category/blog/) |
-| [AI & Systematic Trading](https://blog.edarchimbaud.com/)          |
+| [AI & Systematic Trading](https://blog.paperswithbacktest.com/)          |
 | [Blackarbs blog](http://www.blackarbs.com/blog/)                   |
 | [Hardikp, Hardik Patel blog](https://www.hardikp.com/)             |
 | [Max Dama on Automated Trading](https://bit.ly/3wVZbh9)            |
@@ -567,7 +556,7 @@
 | 标题                                                              |
 |--------------------------------------------------------------------|
 | [AI in Finance](https://cfte.education/)                           |
-| [AI & Systematic Trading](https://edarchimbaud.com/)               |
+| [AI & Systematic Trading](https://paperswithbacktest.com/course)               |
 | [Algorithmic Trading for Cryptocurrencies in Python](https://github.com/tudorelu/tudorials/tree/master/trading) |
 | [Coursera, NYU - Guided Tour of Machine Learning in Finance](https://www.coursera.org/learn/guided-tour-machine-learning-finance) |
 | [Coursera, NYU - Fundamentals of Machine Learning in Finance](https://www.coursera.org/learn/fundamentals-machine-learning-in-finance) |

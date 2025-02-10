@@ -12,10 +12,18 @@ We are collecting a list of resources papers, softwares, books, articles for fin
 ### What will you find here?
 
 - [97 libraries and packages](#libraries-and-packages) for research and live trading
-- [696 strategies](#strategies) described by institutionals and academics
+- [40+ strategies](#strategies) described by institutionals and academics
 - [55 books](#books) for beginners and professionals
 - [23 videos](#videos) and interviews
 - And also some [blogs](#blogs) and [courses](#courses)
+
+<div align="center" style="margin-bottom: 50px; margin-top: 50px;">
+  <div style="border: 2px solid #007bff; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+    <h2>📈 Interested in trading strategies implemented in Python?</h2>
+    <p>Visit our comprehensive collection at <a href="https://paperswithbacktest.com" target="_blank">paperswithbacktest.com</a> for exclusive content!</p>
+  </div>
+</div>
+
 
 <details>
 <summary>Click here to see the full table of content</summary>
@@ -68,7 +76,7 @@ We are collecting a list of resources papers, softwares, books, articles for fin
 > ### How can I help?
 > You can help by submitting an issue with suggestions and by sharing on Twitter:
 >
-> [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=A%20free%20and%20comprehensive%20list%20of%20papers%2C%20libraries%2C%20books%2C%20blogs%2C%20tutorials%20for%20quantitative%20traders.&url=https://github.com/edarchimbaud/awesome-systematic-trading)
+> [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=A%20free%20and%20comprehensive%20list%20of%20papers%2C%20libraries%2C%20books%2C%20blogs%2C%20tutorials%20for%20quantitative%20traders.&url=https://github.com/paperswithbacktest/awesome-systematic-trading)
 
 
 # Libraries and packages
@@ -95,6 +103,7 @@ We are collecting a list of resources papers, softwares, books, articles for fin
 | [WonderTrader](https://github.com/wondertrader/wondertrader) | WonderTrader——量化研发交易一站式框架  | ![GitHub stars](https://badgen.net/github/stars/wondertrader/wondertrader) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [nautilus_trader](https://github.com/nautechsystems/nautilus_trader) | A high-performance algorithmic trading platform and event-driven backtester | ![GitHub stars](https://badgen.net/github/stars/nautechsystems/nautilus_trader) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [PandoraTrader](https://github.com/pegasusTrader/PandoraTrader) | High-frequency quantitative trading platform based on c++ development, supporting multiple trading APIs and cross-platform | ![GitHub stars](https://badgen.net/github/stars/pegasusTrader/PandoraTrader) | ![made-with-c++](https://img.shields.io/badge/Made%20with-c++-1f425f.svg) |
+| [HFTBacktest](https://github.com/nkaz001/hftbacktest) | Highly precise backtest on HFT data in Python+Numba | ![GitHub stars](https://badgen.net/github/stars/nkaz001/hftbacktest) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [aat](https://github.com/AsyncAlgoTrading/aat) | An asynchronous, event-driven framework for writing algorithmic trading strategies in python with optional acceleration in C++. It is designed to be modular and extensible, with support for a wide variety of instruments and strategies, live trading across (and between) multiple exchanges. | ![GitHub stars](https://badgen.net/github/stars/AsyncAlgoTrading/aat) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [sdoosa-algo-trade-python](https://github.com/sreenivasdoosa/sdoosa-algo-trade-python) | This project is mainly for newbies into algo trading who are interested in learning to code their own trading algo using python interpreter. | ![GitHub stars](https://badgen.net/github/stars/sreenivasdoosa/sdoosa-algo-trade-python) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [lumibot](https://github.com/Lumiwealth/lumibot) | A very simple yet useful backtesting and sample based live trading framework (a bit slow to run...) | ![GitHub stars](https://badgen.net/github/stars/Lumiwealth/lumibot) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
@@ -149,6 +158,7 @@ We are collecting a list of resources papers, softwares, books, articles for fin
 | Repository | Description | Stars | Made with |
 |------------|-------------|-------|-----------|
 | [ta-lib](https://github.com/mrjbq7/ta-lib) | Perform technical analysis of financial market data | ![GitHub stars](https://badgen.net/github/stars/mrjbq7/ta-lib) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
+| [go-tart](https://github.com/iamjinlei/go-tart) | A Go implementation of the [ta-lib]((https://github.com/mrjbq7/ta-lib) with streaming update support | ![GitHub stars](https://badgen.net/github/stars/iamjinlei/go-tart) | ![made-with-go](https://img.shields.io/badge/Made%20with-go-1f425f.svg) |
 | [pandas-ta](https://github.com/twopirllc/pandas-ta) | Pandas Technical Analysis (Pandas TA) is an easy to use library that leverages the Pandas package with more than 130 Indicators and Utility functions and more than 60 TA Lib Candlestick Patterns | ![GitHub stars](https://badgen.net/github/stars/twopirllc/pandas-ta) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [finta](https://github.com/peerchemist/finta) | Common financial technical indicators implemented in Pandas | ![GitHub stars](https://badgen.net/github/stars/peerchemist/finta) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [ta-rust](https://github.com/greyblake/ta-rs) | Technical analysis library for Rust language | ![GitHub stars](https://badgen.net/github/stars/greyblake/ta-rs) | ![made-with-rust](https://img.shields.io/badge/Made%20with-Rust-1f425f.svg) |
@@ -216,7 +226,6 @@ We are collecting a list of resources papers, softwares, books, articles for fin
 | [Wallstreet](https://github.com/mcdallas/wallstreet) | Wallstreet: Real time Stock and Option tools | ![GitHub stars](https://badgen.net/github/stars/mcdallas/wallstreet) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 
 
-
 ### Cryptocurrencies
 
 | Repository | Description | Stars | Made with |
@@ -224,6 +233,7 @@ We are collecting a list of resources papers, softwares, books, articles for fin
 | [Cryptofeed](https://github.com/bmoscon/cryptofeed) | Cryptocurrency Exchange Websocket Data Feed Handler with Asyncio | ![GitHub stars](https://badgen.net/github/stars/bmoscon/cryptofeed) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [Gekko-Datasets](https://github.com/xFFFFF/Gekko-Datasets) | Gekko trading bot dataset dumps. Download and use history files in SQLite format. | ![GitHub stars](https://badgen.net/github/stars/xFFFFF/Gekko-Datasets) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 | [CryptoInscriber](https://github.com/Optixal/CryptoInscriber) | A live crypto currency historical trade data blotter. Download live historical trade data from any crypto exchange. | ![GitHub stars](https://badgen.net/github/stars/Optixal/CryptoInscriber) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
+| [Crypto Lake](https://github.com/crypto-lake/lake-api) | High frequency order book & trade data for crypto | ![GitHub stars](https://badgen.net/github/stars/crypto-lake/lake-api) | ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) |
 
 
 ## Data Science
@@ -293,24 +303,10 @@ We are collecting a list of resources papers, softwares, books, articles for fin
 
 # Strategies
 
-*List of **696 academic papers** describing original systematic trading strategies. Each strategy is categorized by its asset class and ordered by descending Sharpe ratio.*
+*List of **40+ academic papers** describing original systematic trading strategies. Each strategy is categorized by its asset class and ordered by descending Sharpe ratio.*
 
-👉 Strategies are now hosted [here](https://edarchimbaud.com):
+👉 Strategies are now hosted [here](https://paperswithbacktest.com).
 
-- [Bonds strategies (7)](https://edarchimbaud.com/bonds)
-- [Commodities strategies (50)](https://edarchimbaud.com/commodities)
-- [Cryptocurrencies strategies (12)](https://edarchimbaud.com/cryptocurrencies)
-- [Currencies strategies (67)](https://edarchimbaud.com/currencies)
-- [Equities strategies (471)](https://edarchimbaud.com/equities)
-- [Options strategies (8)](https://edarchimbaud.com/options)
-- [Bonds / Commodities / Currencies / Equities strategies (22)](https://edarchimbaud.com/bonds-commodities-currencies-equities)
-- [Bonds / Commodities / Equities strategies (6)](https://edarchimbaud.com/bonds-commodities-equities)
-- [Bonds / Commodities / Equities / REITs strategies (6)](https://edarchimbaud.com/bonds-commodities-equities-reits)
-- [Bonds / Equities strategies (13)](https://edarchimbaud.com/bonds-equities)
-- [Bonds / Equities / REITs strategies (6)](https://edarchimbaud.com/bonds-equities-reits)
-- [Commodities / Equities strategies (3)](https://edarchimbaud.com/commodities-equities)
-- [Equities / Options strategies (24)](https://edarchimbaud.com/equities-options)
-- [Equities / REITs strategies (1)](https://edarchimbaud.com/equities-reits)
 
 Previous list of strategies:
 
@@ -554,7 +550,7 @@ A comprehensive list of **55 books** for quantitative traders.
 | Title                                                              |
 |--------------------------------------------------------------------|
 | [AAA Quants, Tom Starke Blog](http://aaaquants.com/category/blog/) |
-| [AI & Systematic Trading](https://blog.edarchimbaud.com/)          |
+| [AI & Systematic Trading](https://blog.paperswithbacktest.com/)          |
 | [Blackarbs blog](http://www.blackarbs.com/blog/)                   |
 | [Hardikp, Hardik Patel blog](https://www.hardikp.com/)             |
 | [Max Dama on Automated Trading](https://bit.ly/3wVZbh9)            |
@@ -570,7 +566,7 @@ A comprehensive list of **55 books** for quantitative traders.
 | Title                                                              |
 |--------------------------------------------------------------------|
 | [AI in Finance](https://cfte.education/)                           |
-| [AI & Systematic Trading](https://edarchimbaud.com/)               |
+| [AI & Systematic Trading](https://paperswithbacktest.com/course)               |
 | [Algorithmic Trading for Cryptocurrencies in Python](https://github.com/tudorelu/tudorials/tree/master/trading) |
 | [Coursera, NYU - Guided Tour of Machine Learning in Finance](https://www.coursera.org/learn/guided-tour-machine-learning-finance) |
 | [Coursera, NYU - Fundamentals of Machine Learning in Finance](https://www.coursera.org/learn/fundamentals-machine-learning-in-finance) |
